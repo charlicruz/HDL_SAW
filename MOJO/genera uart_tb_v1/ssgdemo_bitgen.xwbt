@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=Y:\carlos ITEFI\MOJO\genera uart_tb_v1\ssgdemo.ncd
+OUTFILE=Y:\carlos ITEFI\MOJO\genera uart_tb_v1\ssgdemo.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=Y:\carlos ITEFI\MOJO\genera uart_tb_v1
+LICENSE=WebPack
+USER_INFO=__0_0_0

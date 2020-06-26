@@ -1,0 +1,2 @@
+vhdl work "ipcore_dir/clkmix.vhd"
+vhdl work "generador_pulso.vhd"

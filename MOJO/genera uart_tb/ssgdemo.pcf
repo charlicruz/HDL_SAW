@@ -1,0 +1,38 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Jun 12 18:09:08 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led0" LOCATE = SITE "P134" LEVEL 1;
+COMP "spi_sck" LOCATE = SITE "P43" LEVEL 1;
+COMP "spi_miso" LOCATE = SITE "P45" LEVEL 1;
+COMP "pwm0" LOCATE = SITE "P126" LEVEL 1;
+COMP "pwm1" LOCATE = SITE "P124" LEVEL 1;
+COMP "pwm3" LOCATE = SITE "P132" LEVEL 1;
+COMP "spi_channel<0>" LOCATE = SITE "P46" LEVEL 1;
+COMP "spi_channel<1>" LOCATE = SITE "P61" LEVEL 1;
+COMP "spi_mosi" LOCATE = SITE "P44" LEVEL 1;
+COMP "spi_channel<2>" LOCATE = SITE "P62" LEVEL 1;
+COMP "spi_channel<3>" LOCATE = SITE "P65" LEVEL 1;
+COMP "rx" LOCATE = SITE "P35" LEVEL 1;
+COMP "tx" LOCATE = SITE "P34" LEVEL 1;
+COMP "data_difference<0>" LOCATE = SITE "P137" LEVEL 1;
+COMP "data_difference<1>" LOCATE = SITE "P138" LEVEL 1;
+COMP "data_difference<2>" LOCATE = SITE "P139" LEVEL 1;
+COMP "pwm2" LOCATE = SITE "P123" LEVEL 1;
+COMP "spi_ss" LOCATE = SITE "P48" LEVEL 1;
+COMP "mclk" LOCATE = SITE "P56" LEVEL 1;
+COMP "reset" LOCATE = SITE "P50" LEVEL 1;
+TIMEGRP clk = BEL "clk_gen/counter_0" BEL "clk_gen/counter_1" BEL
+        "clk_gen/counter_2" BEL "clk_gen/counter_5" BEL "clk_gen/counter_4"
+        BEL "clk_gen/counter_6" BEL "clk_gen/counter_8" BEL
+        "clk_gen/counter_9" BEL "clk_gen/counter_10" BEL "clk_gen/counter_14"
+        BEL "clk_gen/counter_3_C_3" BEL "clk_gen/counter_3_P_3" BEL
+        "clk_gen/counter_7_C_7" BEL "clk_gen/counter_7_P_7" BEL
+        "clk_gen/counter_12_C_12" BEL "clk_gen/counter_12_P_12" BEL
+        "clk_gen/counter_11_C_11" BEL "clk_gen/counter_11_P_11" BEL
+        "clk_gen/counter_13_C_13" BEL "clk_gen/counter_13_P_13" BEL
+        "clk_gen/clk_out_C" BEL "clk_gen/clk_out_P" BEL "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

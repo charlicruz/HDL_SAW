@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Jun 19 19:10:13 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "pwm1" LOCATE = SITE "P124" LEVEL 1;
+COMP "pwm4" LOCATE = SITE "P134" LEVEL 1;
+COMP "pwm5" LOCATE = SITE "P133" LEVEL 1;
+COMP "rx" LOCATE = SITE "P35" LEVEL 1;
+COMP "tx" LOCATE = SITE "P34" LEVEL 1;
+COMP "data_difference<0>" LOCATE = SITE "P137" LEVEL 1;
+COMP "data_difference<1>" LOCATE = SITE "P138" LEVEL 1;
+COMP "data_difference<2>" LOCATE = SITE "P139" LEVEL 1;
+COMP "pwm2" LOCATE = SITE "P123" LEVEL 1;
+COMP "salida<0>" LOCATE = SITE "P32" LEVEL 1;
+COMP "mclk" LOCATE = SITE "P56" LEVEL 1;
+COMP "reset" LOCATE = SITE "P38" LEVEL 1;
+PIN reset_pin<0> = BEL "reset" PINNAME PAD;
+PIN "reset_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+SCHEMATIC END;
+

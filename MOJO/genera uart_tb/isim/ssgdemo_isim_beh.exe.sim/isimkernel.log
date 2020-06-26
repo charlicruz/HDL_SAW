@@ -1,0 +1,28 @@
+Command line:
+   ssgdemo_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49348
+
+Wed Jun 17 13:39:41 2020
+
+
+ Elaboration Time: 0.109375 sec
+
+ Current Memory Usage: 674.562 Meg
+
+ Total Signals          : 307
+ Total Nets             : 470
+ Total Signal Drivers   : 202
+ Total Blocks           : 21
+ Total Primitive Blocks : 18
+ Total Processes        : 121
+ Total Traceable Variables  : 163
+ Total Scalar Nets and Variables : 5334
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 674.562 Meg
+
+Wed Jun 17 13:40:00 2020
+

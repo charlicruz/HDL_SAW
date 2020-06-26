@@ -1,0 +1,5 @@
+work	"clk_18432.vhd"
+work	"generador_pulso.vhd"
+work	"ipcore_dir/clkmix.vhd"
+work	"uart_rx.vhd"
+work	"uart_tx.vhd"

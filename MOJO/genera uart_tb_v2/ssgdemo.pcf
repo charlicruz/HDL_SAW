@@ -1,0 +1,41 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Jun 19 17:51:42 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "pwm1" LOCATE = SITE "P124" LEVEL 1;
+COMP "pwm2" LOCATE = SITE "P123" LEVEL 1;
+COMP "pwm4" LOCATE = SITE "P134" LEVEL 1;
+COMP "pwm5" LOCATE = SITE "P133" LEVEL 1;
+COMP "rx" LOCATE = SITE "P35" LEVEL 1;
+COMP "data_difference<0>" LOCATE = SITE "P137" LEVEL 1;
+COMP "data_difference<1>" LOCATE = SITE "P138" LEVEL 1;
+COMP "tx" LOCATE = SITE "P34" LEVEL 1;
+COMP "data_difference<2>" LOCATE = SITE "P139" LEVEL 1;
+COMP "salida<0>" LOCATE = SITE "P32" LEVEL 1;
+COMP "mclk" LOCATE = SITE "P56" LEVEL 1;
+COMP "reset" LOCATE = SITE "P38" LEVEL 1;
+PIN reset_pin<0> = BEL "reset" PINNAME PAD;
+PIN "reset_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+TIMEGRP clk = BEL "baud_pulse" BEL "os_pulse" BEL "rx_error" BEL "rx_buffer_0"
+        BEL "rx_buffer_1" BEL "rx_buffer_2" BEL "rx_buffer_3" BEL
+        "rx_buffer_4" BEL "rx_buffer_5" BEL "rx_buffer_6" BEL "rx_buffer_7"
+        BEL "rx_buffer_8" BEL "rx_buffer_9" BEL "rx_data_0" BEL "rx_data_1"
+        BEL "rx_data_2" BEL "rx_data_3" BEL "rx_data_4" BEL "rx_data_5" BEL
+        "rx_data_6" BEL "rx_data_7" BEL "tx_count_0" BEL "tx_count_1" BEL
+        "tx_count_2" BEL "tx_count_3" BEL "os_count_0" BEL "os_count_1" BEL
+        "os_count_2" BEL "os_count_3" BEL "count_os_0" BEL "count_os_1" BEL
+        "count_os_2" BEL "count_os_3" BEL "count_os_4" BEL "count_os_5" BEL
+        "count_os_6" BEL "count_os_7" BEL "tx_state" BEL "tx_buffer_0" BEL
+        "tx_buffer_1" BEL "tx_buffer_2" BEL "tx_buffer_3" BEL "tx_buffer_4"
+        BEL "tx_buffer_5" BEL "tx_buffer_6" BEL "tx_buffer_7" BEL
+        "tx_buffer_8" BEL "tx_buffer_9" BEL "tx_buffer_10" BEL "tx" BEL
+        "count_baud_0" BEL "count_baud_1" BEL "count_baud_2" BEL
+        "count_baud_3" BEL "count_baud_4" BEL "count_baud_5" BEL
+        "count_baud_6" BEL "count_baud_7" BEL "count_baud_8" BEL
+        "count_baud_9" BEL "count_baud_10" BEL "count_baud_11" BEL
+        "rx_count_0" BEL "rx_count_1" BEL "rx_count_2" BEL "rx_count_3" BEL
+        "rx_state" BEL "tx_busy" BEL "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,40 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o Y:/carlos ITEFI/MOJO/genera uart_tb_v1/tb_isim_beh.exe -prj Y:/carlos ITEFI/MOJO/genera uart_tb_v1/tb_beh.prj work.tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "Y:/carlos ITEFI/MOJO/genera uart_tb_v1/ipcore_dir/clkmix.vhd" into library work
+Parsing VHDL file "Y:/carlos ITEFI/MOJO/genera uart_tb_v1/uart_tx.vhd" into library work
+Parsing VHDL file "Y:/carlos ITEFI/MOJO/genera uart_tb_v1/uart_rx.vhd" into library work
+Parsing VHDL file "Y:/carlos ITEFI/MOJO/genera uart_tb_v1/clk_18432.vhd" into library work
+Parsing VHDL file "Y:/carlos ITEFI/MOJO/genera uart_tb_v1/generador_pulso.vhd" into library work
+Parsing VHDL file "Y:/carlos ITEFI/MOJO/genera uart_tb_v1/tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package textio
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling architecture ibufg_v of entity IBUFG [\IBUFG("DONT_CARE","0",true,"DEF...]
+Compiling architecture dcm_sp_clock_divide_by_2_v of entity dcm_sp_clock_divide_by_2 [dcm_sp_clock_divide_by_2_default]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_clock_lost_v of entity dcm_sp_clock_lost [dcm_sp_clock_lost_default]
+Compiling architecture dcm_sp_v of entity DCM_SP [\DCM_SP(true,"*",true,false,2.0,...]
+Compiling architecture xilinx of entity clkmix [clkmix_default]
+Compiling architecture behavioural of entity clk_18432 [clk_18432_default]
+Compiling architecture behavioural of entity uart_tx [uart_tx_default]
+Compiling architecture behavioural of entity uart_rx [uart_rx_default]
+Compiling architecture behaivioral of entity ssgdemo [ssgdemo_default]
+Compiling architecture behavior of entity tb
+Time Resolution for simulation is 1ps.
+Compiled 33 VHDL Units
+Built simulation executable Y:/carlos ITEFI/MOJO/genera uart_tb_v1/tb_isim_beh.exe
+Fuse Memory Usage: 56760 KB
+Fuse CPU Usage: 999 ms

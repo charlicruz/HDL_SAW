@@ -1,0 +1,275 @@
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
+xst -intstyle ise -ifn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.xst" -ofn "Y:/carlos ITEFI/MOJO/genera/ssgdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mojo.ucf -p xc6slx9-tqg144-2 "ssgdemo.ngc" ssgdemo.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssgdemo_map.ncd ssgdemo.ngd ssgdemo.pcf 
+par -w -intstyle ise -ol high -mt off ssgdemo_map.ncd ssgdemo.ncd ssgdemo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ssgdemo.twx ssgdemo.ncd -o ssgdemo.twr ssgdemo.pcf -ucf mojo.ucf 
+bitgen -intstyle ise -f ssgdemo.ut ssgdemo.ncd 
