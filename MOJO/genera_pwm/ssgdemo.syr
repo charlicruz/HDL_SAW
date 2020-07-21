@@ -1,0 +1,698 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: ssgdemo.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ssgdemo.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ssgdemo"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : ssgdemo
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "\\vboxsvr\untitled_folder\carlos ITEFI\ITEFI-PROYECTOS\HDL_SAW\MOJO\genera_clock\ipcore_dir\clkmix.vhd" into library work
+Parsing entity <clkmix>.
+Parsing architecture <xilinx> of entity <clkmix>.
+Parsing VHDL file "\\vboxsvr\untitled_folder\carlos ITEFI\ITEFI-PROYECTOS\HDL_SAW\MOJO\genera_clock\pwm_generator.vhd" into library work
+Parsing entity <PWM_GENERATOR>.
+Parsing architecture <behavioral> of entity <pwm_generator>.
+Parsing VHDL file "\\vboxsvr\untitled_folder\carlos ITEFI\ITEFI-PROYECTOS\HDL_SAW\MOJO\genera_clock\pwm_counter.vhd" into library work
+Parsing entity <PWM_COUNTER>.
+Parsing architecture <Behavioral> of entity <pwm_counter>.
+Parsing VHDL file "\\vboxsvr\untitled_folder\carlos ITEFI\ITEFI-PROYECTOS\HDL_SAW\MOJO\genera_clock\generador_pulso.vhd" into library work
+Parsing entity <ssgdemo>.
+Parsing architecture <Behaivioral> of entity <ssgdemo>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <ssgdemo> (architecture <Behaivioral>) from library <work>.
+
+Elaborating entity <PWM_GENERATOR> (architecture <behavioral>) with generics from library <work>.
+
+Elaborating entity <PWM_COUNTER> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <clkmix> (architecture <xilinx>) from library <work>.
+WARNING:HDLCompiler:1127 - "\\vboxsvr\untitled_folder\carlos ITEFI\ITEFI-PROYECTOS\HDL_SAW\MOJO\genera_clock\generador_pulso.vhd" Line 129: Assignment to cntr3 ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "\\vboxsvr\untitled_folder\carlos ITEFI\ITEFI-PROYECTOS\HDL_SAW\MOJO\genera_clock\generador_pulso.vhd" Line 159: cnt should be on the sensitivity list of the process
+WARNING:HDLCompiler:634 - "\\vboxsvr\untitled_folder\carlos ITEFI\ITEFI-PROYECTOS\HDL_SAW\MOJO\genera_clock\generador_pulso.vhd" Line 50: Net <duty_cycle[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "\\vboxsvr\untitled_folder\carlos ITEFI\ITEFI-PROYECTOS\HDL_SAW\MOJO\genera_clock\generador_pulso.vhd" Line 53: Net <enable> does not have a driver.
+WARNING:HDLCompiler:634 - "\\vboxsvr\untitled_folder\carlos ITEFI\ITEFI-PROYECTOS\HDL_SAW\MOJO\genera_clock\generador_pulso.vhd" Line 54: Net <pwm_in> does not have a driver.
+WARNING:Xst:2972 - "\\vboxsvr\untitled_folder\carlos ITEFI\ITEFI-PROYECTOS\HDL_SAW\MOJO\genera_clock\generador_pulso.vhd" line 100. All outputs of instance <pwm_c> of block <PWM_COUNTER> are unconnected in block <ssgdemo>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ssgdemo>.
+    Related source file is "\\vboxsvr\untitled_folder\carlos ITEFI\ITEFI-PROYECTOS\HDL_SAW\MOJO\genera_clock\generador_pulso.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_ss> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_mosi> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_sck> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <avr_tx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <avr_rx_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "\\vboxsvr\untitled_folder\carlos ITEFI\ITEFI-PROYECTOS\HDL_SAW\MOJO\genera_clock\generador_pulso.vhd" line 91: Output port <pwm_inverse_out> of the instance <pwm_g> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\untitled_folder\carlos ITEFI\ITEFI-PROYECTOS\HDL_SAW\MOJO\genera_clock\generador_pulso.vhd" line 100: Output port <PWM_COUNT> of the instance <pwm_c> is unconnected or connected to loadless signal.
+WARNING:Xst:2935 - Signal 'spi_channel', unconnected in block 'ssgdemo', is tied to its initial value (0000).
+WARNING:Xst:653 - Signal <duty_cycle> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:2935 - Signal 'avr_rx', unconnected in block 'ssgdemo', is tied to its initial value (0).
+WARNING:Xst:2935 - Signal 'spi_miso', unconnected in block 'ssgdemo', is tied to its initial value (0).
+WARNING:Xst:653 - Signal <enable> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <pwm_in> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 7-bit register for signal <cnt>.
+    Found 7-bit register for signal <cntr0>.
+    Found 7-bit register for signal <cntrv>.
+    Found 29-bit register for signal <clkdiv>.
+    Found 29-bit adder for signal <clkdiv[28]_GND_5_o_add_0_OUT> created at line 117.
+    Found 7-bit adder for signal <cntr0[6]_GND_5_o_add_2_OUT> created at line 132.
+    Found 7-bit adder for signal <cntrv[6]_GND_5_o_add_3_OUT> created at line 133.
+    Found 7-bit adder for signal <cnt[6]_GND_5_o_add_10_OUT> created at line 148.
+    Found 7-bit comparator lessequal for signal <pwmv> created at line 153
+    Found 7-bit comparator greater for signal <pwm0> created at line 154
+    Found 7-bit comparator greater for signal <pwm1> created at line 155
+    WARNING:Xst:2404 -  FFs/Latches <cntr1<6:1>> (without init value) have a constant value of 0 in block <ssgdemo>.
+    WARNING:Xst:2404 -  FFs/Latches <cntr1<1:1>> (without init value) have a constant value of 1 in block <ssgdemo>.
+    WARNING:Xst:2404 -  FFs/Latches <cntr2<6:1>> (without init value) have a constant value of 0 in block <ssgdemo>.
+    WARNING:Xst:2404 -  FFs/Latches <cntr2<1:1>> (without init value) have a constant value of 1 in block <ssgdemo>.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  50 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <ssgdemo> synthesized.
+
+Synthesizing Unit <PWM_GENERATOR>.
+    Related source file is "\\vboxsvr\untitled_folder\carlos ITEFI\ITEFI-PROYECTOS\HDL_SAW\MOJO\genera_clock\pwm_generator.vhd".
+        base_clock = 50000000
+        pwm_frequency = 5000
+        resolution = 8
+    Found 14-bit register for signal <count<0>>.
+    Found 1-bit register for signal <pwm_out>.
+    Found 1-bit register for signal <pwm_inverse_out>.
+    Found 13-bit register for signal <half_duty_cycle_new>.
+    Found 13-bit register for signal <half_duty_cycle<0>>.
+    Found 15-bit subtractor for signal <GND_6_o_GND_6_o_sub_8_OUT> created at line 53.
+    Found 14-bit adder for signal <count[0][13]_GND_6_o_add_3_OUT> created at line 47.
+    Found 14-bit comparator equal for signal <GND_6_o_count[0][13]_equal_7_o> created at line 50
+    Found 15-bit comparator not equal for signal <GND_6_o_GND_6_o_equal_9_o> created at line 53
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  42 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <PWM_GENERATOR> synthesized.
+
+Synthesizing Unit <clkmix>.
+    Related source file is "\\vboxsvr\untitled_folder\carlos ITEFI\ITEFI-PROYECTOS\HDL_SAW\MOJO\genera_clock\ipcore_dir\clkmix.vhd".
+    Summary:
+	no macro.
+Unit <clkmix> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 14-bit adder                                          : 1
+ 15-bit subtractor                                     : 1
+ 29-bit adder                                          : 1
+ 7-bit adder                                           : 3
+# Registers                                            : 9
+ 1-bit register                                        : 2
+ 13-bit register                                       : 2
+ 14-bit register                                       : 1
+ 29-bit register                                       : 1
+ 7-bit register                                        : 3
+# Comparators                                          : 5
+ 14-bit comparator equal                               : 1
+ 15-bit comparator not equal                           : 1
+ 7-bit comparator greater                              : 2
+ 7-bit comparator lessequal                            : 1
+# Multiplexers                                         : 2
+ 14-bit 2-to-1 multiplexer                             : 1
+ 7-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <half_duty_cycle_new_12> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <half_duty_cycle_new_11> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <half_duty_cycle_new_10> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <half_duty_cycle_new_9> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <half_duty_cycle_new_8> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <half_duty_cycle_new_7> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <half_duty_cycle_new_6> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <half_duty_cycle_new_5> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <half_duty_cycle_new_4> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <half_duty_cycle_new_3> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <half_duty_cycle_new_2> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <half_duty_cycle_new_1> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <half_duty_cycle_new_0> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_12> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_11> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_10> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_9> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_8> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_7> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_6> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_5> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_4> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_3> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_2> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_1> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_0> has a constant value of 0 in block <pwm_g>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <PWM_GENERATOR>.
+The following registers are absorbed into counter <count_0>: 1 register on signal <count_0>.
+Unit <PWM_GENERATOR> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ssgdemo>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+The following registers are absorbed into counter <cntr0>: 1 register on signal <cntr0>.
+The following registers are absorbed into counter <cntrv>: 1 register on signal <cntrv>.
+Unit <ssgdemo> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 15-bit subtractor                                     : 1
+# Counters                                             : 5
+ 14-bit up counter                                     : 1
+ 29-bit up counter                                     : 1
+ 7-bit up counter                                      : 3
+# Registers                                            : 28
+ Flip-Flops                                            : 28
+# Comparators                                          : 5
+ 14-bit comparator equal                               : 1
+ 15-bit comparator not equal                           : 1
+ 7-bit comparator greater                              : 2
+ 7-bit comparator lessequal                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <half_duty_cycle_new_12> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_new_11> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_new_10> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_new_9> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_new_8> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_new_7> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_new_6> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_new_5> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_new_4> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_new_3> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_new_2> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_new_1> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_new_0> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_12> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_11> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_10> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_9> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_8> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_7> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_6> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_5> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_4> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_3> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_2> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_1> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <half_duty_cycle_0_0> has a constant value of 0 in block <PWM_GENERATOR>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2146 - In block <ssgdemo>, Counter <cntrv> <cntr0> are equivalent, XST will keep only <cntrv>.
+WARNING:Xst:2677 - Node <clkdiv_25> of sequential type is unconnected in block <ssgdemo>.
+WARNING:Xst:2677 - Node <clkdiv_26> of sequential type is unconnected in block <ssgdemo>.
+WARNING:Xst:2677 - Node <clkdiv_27> of sequential type is unconnected in block <ssgdemo>.
+WARNING:Xst:2677 - Node <clkdiv_28> of sequential type is unconnected in block <ssgdemo>.
+
+Optimizing unit <ssgdemo> ...
+
+Optimizing unit <PWM_GENERATOR> ...
+WARNING:Xst:2677 - Node <pwm_g/pwm_inverse_out_0> of sequential type is unconnected in block <ssgdemo>.
+WARNING:Xst:1710 - FF/Latch <pwm_g/pwm_out_0> (without init value) has a constant value of 0 in block <ssgdemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <pwm_g/count_0_13> of sequential type is unconnected in block <ssgdemo>.
+WARNING:Xst:2677 - Node <pwm_g/count_0_12> of sequential type is unconnected in block <ssgdemo>.
+WARNING:Xst:2677 - Node <pwm_g/count_0_11> of sequential type is unconnected in block <ssgdemo>.
+WARNING:Xst:2677 - Node <pwm_g/count_0_10> of sequential type is unconnected in block <ssgdemo>.
+WARNING:Xst:2677 - Node <pwm_g/count_0_9> of sequential type is unconnected in block <ssgdemo>.
+WARNING:Xst:2677 - Node <pwm_g/count_0_8> of sequential type is unconnected in block <ssgdemo>.
+WARNING:Xst:2677 - Node <pwm_g/count_0_7> of sequential type is unconnected in block <ssgdemo>.
+WARNING:Xst:2677 - Node <pwm_g/count_0_6> of sequential type is unconnected in block <ssgdemo>.
+WARNING:Xst:2677 - Node <pwm_g/count_0_5> of sequential type is unconnected in block <ssgdemo>.
+WARNING:Xst:2677 - Node <pwm_g/count_0_4> of sequential type is unconnected in block <ssgdemo>.
+WARNING:Xst:2677 - Node <pwm_g/count_0_3> of sequential type is unconnected in block <ssgdemo>.
+WARNING:Xst:2677 - Node <pwm_g/count_0_2> of sequential type is unconnected in block <ssgdemo>.
+WARNING:Xst:2677 - Node <pwm_g/count_0_1> of sequential type is unconnected in block <ssgdemo>.
+WARNING:Xst:2677 - Node <pwm_g/count_0_0> of sequential type is unconnected in block <ssgdemo>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ssgdemo, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 39
+ Flip-Flops                                            : 39
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ssgdemo.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 101
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 24
+#      LUT2                        : 4
+#      LUT3                        : 5
+#      LUT4                        : 2
+#      LUT5                        : 4
+#      LUT6                        : 7
+#      MUXCY                       : 24
+#      VCC                         : 1
+#      XORCY                       : 25
+# FlipFlops/Latches                : 39
+#      FD                          : 32
+#      FDC                         : 7
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 13
+#      IBUF                        : 1
+#      IBUFG                       : 1
+#      OBUF                        : 11
+# DCMs                             : 1
+#      DCM_SP                      : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              39  out of  11440     0%  
+ Number of Slice LUTs:                   50  out of   5720     0%  
+    Number used as Logic:                50  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     50
+   Number with an unused Flip Flop:      11  out of     50    22%  
+   Number with an unused LUT:             0  out of     50     0%  
+   Number of fully used LUT-FF pairs:    39  out of     50    78%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          29
+ Number of bonded IOBs:                  13  out of    102    12%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+mclk                               | DCM_SP:CLKFX           | 25    |
+clkdiv_4                           | NONE(cnt_0)            | 7     |
+clkdiv_24                          | NONE(cntrv_0)          | 7     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.908ns (Maximum Frequency: 343.879MHz)
+   Minimum input arrival time before clock: 3.632ns
+   Maximum output required time after clock: 8.754ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mclk'
+  Clock period: 1.520ns (frequency: 657.956MHz)
+  Total number of paths / destination ports: 325 / 25
+-------------------------------------------------------------------------
+Delay:               2.660ns (Levels of Logic = 22)
+  Source:            clkdiv_4 (FF)
+  Destination:       clkdiv_24 (FF)
+  Source Clock:      mclk rising 0.6X
+  Destination Clock: mclk rising 0.6X
+
+  Data Path: clkdiv_4 to clkdiv_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               8   0.525   0.944  clkdiv_4 (clkdiv_4)
+     LUT1:I0->O            1   0.254   0.000  Mcount_clkdiv_cy<4>_rt (Mcount_clkdiv_cy<4>_rt)
+     MUXCY:S->O            1   0.215   0.000  Mcount_clkdiv_cy<4> (Mcount_clkdiv_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_clkdiv_cy<5> (Mcount_clkdiv_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_clkdiv_cy<6> (Mcount_clkdiv_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_clkdiv_cy<7> (Mcount_clkdiv_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_clkdiv_cy<8> (Mcount_clkdiv_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_clkdiv_cy<9> (Mcount_clkdiv_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_clkdiv_cy<10> (Mcount_clkdiv_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_clkdiv_cy<11> (Mcount_clkdiv_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_clkdiv_cy<12> (Mcount_clkdiv_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_clkdiv_cy<13> (Mcount_clkdiv_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_clkdiv_cy<14> (Mcount_clkdiv_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_clkdiv_cy<15> (Mcount_clkdiv_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_clkdiv_cy<16> (Mcount_clkdiv_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_clkdiv_cy<17> (Mcount_clkdiv_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_clkdiv_cy<18> (Mcount_clkdiv_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_clkdiv_cy<19> (Mcount_clkdiv_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_clkdiv_cy<20> (Mcount_clkdiv_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_clkdiv_cy<21> (Mcount_clkdiv_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_clkdiv_cy<22> (Mcount_clkdiv_cy<22>)
+     MUXCY:CI->O           0   0.023   0.000  Mcount_clkdiv_cy<23> (Mcount_clkdiv_cy<23>)
+     XORCY:CI->O           1   0.206   0.000  Mcount_clkdiv_xor<24> (Result<24>)
+     FD:D                      0.074          clkdiv_24
+    ----------------------------------------
+    Total                      2.660ns (1.716ns logic, 0.944ns route)
+                                       (64.5% logic, 35.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkdiv_4'
+  Clock period: 2.847ns (frequency: 351.247MHz)
+  Total number of paths / destination ports: 33 / 7
+-------------------------------------------------------------------------
+Delay:               2.847ns (Levels of Logic = 2)
+  Source:            cnt_1 (FF)
+  Destination:       cnt_5 (FF)
+  Source Clock:      clkdiv_4 rising
+  Destination Clock: clkdiv_4 rising
+
+  Data Path: cnt_1 to cnt_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.525   1.018  cnt_1 (cnt_1)
+     LUT2:I0->O            2   0.250   0.726  Mcount_cnt_xor<2>121 (Mcount_cnt_xor<2>12)
+     LUT6:I5->O            1   0.254   0.000  Mcount_cnt_xor<6>11 (Mcount_cnt6)
+     FDC:D                     0.074          cnt_6
+    ----------------------------------------
+    Total                      2.847ns (1.103ns logic, 1.744ns route)
+                                       (38.7% logic, 61.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkdiv_24'
+  Clock period: 2.908ns (frequency: 343.879MHz)
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Delay:               2.908ns (Levels of Logic = 2)
+  Source:            cntrv_2 (FF)
+  Destination:       cntrv_6 (FF)
+  Source Clock:      clkdiv_24 rising
+  Destination Clock: clkdiv_24 rising
+
+  Data Path: cntrv_2 to cntrv_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.525   1.138  cntrv_2 (cntrv_2)
+     LUT3:I0->O            1   0.235   0.682  Mcount_cntrv_xor<3>111 (Mcount_cntrv_xor<3>11)
+     LUT5:I4->O            1   0.254   0.000  Mcount_cntrv_xor<6>11 (Result<6>1)
+     FD:D                      0.074          cntrv_6
+    ----------------------------------------
+    Total                      2.908ns (1.088ns logic, 1.820ns route)
+                                       (37.4% logic, 62.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkdiv_4'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              3.632ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       cnt_0 (FF)
+  Destination Clock: clkdiv_4 rising
+
+  Data Path: reset to cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  reset_IBUF (reset_IBUF)
+     INV:I->O              7   0.255   0.909  reset_inv1_INV_0 (reset_inv)
+     FDC:CLR                   0.459          cnt_0
+    ----------------------------------------
+    Total                      3.632ns (2.042ns logic, 1.590ns route)
+                                       (56.2% logic, 43.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mclk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            clkdiv_10 (FF)
+  Destination:       led0 (PAD)
+  Source Clock:      mclk rising 0.6X
+
+  Data Path: clkdiv_10 to led0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   0.725  clkdiv_10 (clkdiv_10)
+     OBUF:I->O                 2.912          led0_OBUF (led0)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdiv_24'
+  Total number of paths / destination ports: 14 / 2
+-------------------------------------------------------------------------
+Offset:              8.729ns (Levels of Logic = 5)
+  Source:            cntrv_2 (FF)
+  Destination:       pwm0 (PAD)
+  Source Clock:      clkdiv_24 rising
+
+  Data Path: cntrv_2 to pwm0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.525   1.340  cntrv_2 (cntrv_2)
+     LUT6:I1->O            1   0.254   0.682  pwm02 (pwm01)
+     LUT3:I2->O            1   0.254   0.682  pwm01_SW2 (N9)
+     LUT5:I4->O            1   0.254   0.910  pwm01 (pwm02)
+     LUT3:I0->O            1   0.235   0.681  pwm021 (pwm0_OBUF)
+     OBUF:I->O                 2.912          pwm0_OBUF (pwm0)
+    ----------------------------------------
+    Total                      8.729ns (4.434ns logic, 4.295ns route)
+                                       (50.8% logic, 49.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdiv_4'
+  Total number of paths / destination ports: 21 / 3
+-------------------------------------------------------------------------
+Offset:              8.754ns (Levels of Logic = 5)
+  Source:            cnt_2 (FF)
+  Destination:       pwm0 (PAD)
+  Source Clock:      clkdiv_4 rising
+
+  Data Path: cnt_2 to pwm0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.525   1.365  cnt_2 (cnt_2)
+     LUT6:I0->O            1   0.254   0.682  pwm02 (pwm01)
+     LUT3:I2->O            1   0.254   0.682  pwm01_SW2 (N9)
+     LUT5:I4->O            1   0.254   0.910  pwm01 (pwm02)
+     LUT3:I0->O            1   0.235   0.681  pwm021 (pwm0_OBUF)
+     OBUF:I->O                 2.912          pwm0_OBUF (pwm0)
+    ----------------------------------------
+    Total                      8.754ns (4.434ns logic, 4.320ns route)
+                                       (50.7% logic, 49.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clkdiv_24
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkdiv_24      |    2.908|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clkdiv_4
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkdiv_4       |    2.847|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+mclk           |    2.660|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.38 secs
+ 
+--> 
+
+Total memory usage is 277568 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   95 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

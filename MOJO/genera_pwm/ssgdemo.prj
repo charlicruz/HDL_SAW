@@ -1,0 +1,4 @@
+vhdl work "ipcore_dir/clkmix.vhd"
+vhdl work "pwm_generator.vhd"
+vhdl work "pwm_counter.vhd"
+vhdl work "generador_pulso.vhd"

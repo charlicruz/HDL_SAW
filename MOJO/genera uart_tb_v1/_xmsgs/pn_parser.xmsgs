@@ -8,34 +8,34 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/MOJO/genera uart_tb_v1/cclk_detector.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera uart_tb_v1/cclk_detector.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/MOJO/genera uart_tb_v1/clk_18432.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera uart_tb_v1/clk_18432.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/MOJO/genera uart_tb_v1/generador_pulso.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera uart_tb_v1/generador_pulso.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/MOJO/genera uart_tb_v1/serial_rx.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera uart_tb_v1/serial_rx.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/MOJO/genera uart_tb_v1/serial_tx.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera uart_tb_v1/serial_tx.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/MOJO/genera uart_tb_v1/spi_slave.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera uart_tb_v1/spi_slave.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/MOJO/genera uart_tb_v1/uart_rx.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera uart_tb_v1/uart_rx.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/MOJO/genera uart_tb_v1/uart_tx.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera uart_tb_v1/uart_tx.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/MOJO/genera uart_tb_v1/uartrx.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera uart_tb_v1/uartrx.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/MOJO/genera uart_tb_v1/uarttx.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera uart_tb_v1/uarttx.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

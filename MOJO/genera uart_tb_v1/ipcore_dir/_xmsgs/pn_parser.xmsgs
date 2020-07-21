@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/MOJO/genera uart_tb_v1/ipcore_dir/clkmix.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera uart_tb_v1/ipcore_dir/clkmix.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

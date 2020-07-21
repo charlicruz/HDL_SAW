@@ -1,0 +1,22 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Jul 16 09:15:09 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led0" LOCATE = SITE "P134" LEVEL 1;
+COMP "spi_sck" LOCATE = SITE "P43" LEVEL 1;
+COMP "spi_miso" LOCATE = SITE "P45" LEVEL 1;
+COMP "pwm0" LOCATE = SITE "P126" LEVEL 1;
+COMP "pwm1" LOCATE = SITE "P124" LEVEL 1;
+COMP "pwm3" LOCATE = SITE "P132" LEVEL 1;
+COMP "spi_channel<0>" LOCATE = SITE "P46" LEVEL 1;
+COMP "spi_channel<1>" LOCATE = SITE "P61" LEVEL 1;
+COMP "spi_mosi" LOCATE = SITE "P44" LEVEL 1;
+COMP "spi_channel<2>" LOCATE = SITE "P62" LEVEL 1;
+COMP "spi_channel<3>" LOCATE = SITE "P65" LEVEL 1;
+COMP "pwm2" LOCATE = SITE "P123" LEVEL 1;
+COMP "spi_ss" LOCATE = SITE "P48" LEVEL 1;
+COMP "mclk" LOCATE = SITE "P56" LEVEL 1;
+COMP "reset" LOCATE = SITE "P38" LEVEL 1;
+SCHEMATIC END;
+

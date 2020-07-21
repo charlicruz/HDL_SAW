@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "Y:/carlos ITEFI/MOJO/genera uart_tb_v1/tb_isim_beh.exe" -prj "Y:/carlos ITEFI/MOJO/genera uart_tb_v1/tb_beh.prj" "work.tb" 
+-intstyle "ise" -incremental -lib "secureip" -o "Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera uart_tb_v1/ssgdemo_isim_beh.exe" -prj "Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera uart_tb_v1/ssgdemo_beh.prj" "work.ssgdemo" 

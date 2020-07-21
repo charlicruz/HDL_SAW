@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera_pwm/tb_PWM_COUNTER_isim_beh.exe" -prj "Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera_pwm/tb_PWM_COUNTER_beh.prj" "work.tb_PWM_COUNTER" 

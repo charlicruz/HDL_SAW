@@ -14,10 +14,10 @@ entity ssgdemo is
 	Port (	entrada : in std_logic;
 	         mclk	:	in		std_logic;
 			--	led0	:	out	std_logic;
-		--		pwm0		:	out	std_logic;
+				pwm0		:	out	std_logic;
 				pwm1		:	out	std_logic;
 				pwm2		:	out	std_logic;
-		--		pwm3		:	out	std_logic;
+				pwm3		:	out	std_logic;
 				pwm4		:	out	std_logic;
 				pwm5		:	out	std_logic;   
 				pwm6				:	out	std_logic;				

@@ -1,0 +1,2 @@
+vhdl work "pwm_counter.vhd"
+vhdl work "tb.vhd"

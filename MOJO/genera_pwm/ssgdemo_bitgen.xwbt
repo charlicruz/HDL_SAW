@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=Y:\carlos ITEFI\ITEFI-PROYECTOS\HDL_SAW\MOJO\genera_clock\ssgdemo.ncd
+OUTFILE=Y:\carlos ITEFI\ITEFI-PROYECTOS\HDL_SAW\MOJO\genera_clock\ssgdemo.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=Y:\carlos ITEFI\ITEFI-PROYECTOS\HDL_SAW\MOJO\genera_clock
+LICENSE=WebPack
+USER_INFO=__0_0_0

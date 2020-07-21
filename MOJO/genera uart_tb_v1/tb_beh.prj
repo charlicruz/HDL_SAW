@@ -1,6 +1,6 @@
 vhdl work "ipcore_dir/clkmix.vhd"
-vhdl work "uart_tx.vhd"
 vhdl work "uart_rx.vhd"
+vhdl work "uartrx.vhd"
 vhdl work "clk_18432.vhd"
 vhdl work "generador_pulso.vhd"
 vhdl work "tb.vhd"

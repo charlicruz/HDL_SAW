@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-06-19T19:18:36</DateModified>
+  <DateModified>2020-07-16T09:39:33</DateModified>
   <ModuleName>ssgdemo</ModuleName>
   <SummaryTimeStamp>2020-06-19T15:40:00</SummaryTimeStamp>
-  <SavedFilePath>Y:/carlos ITEFI/MOJO/genera uart_tb_v1/iseconfig/ssgdemo.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>Y:/carlos ITEFI/MOJO/genera uart_tb_v1\</ImplementationReportsDirectory>
+  <SavedFilePath>Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera uart_tb_v1/iseconfig/ssgdemo.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera uart_tb_v1\</ImplementationReportsDirectory>
   <DateInitialized>2020-04-13T16:24:44</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

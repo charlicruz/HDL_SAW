@@ -5,5 +5,17 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="error" file="HDLCompiler" num="32" delta="unknown" >"Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera uart_tb_v1/generador_pulso.vhd" Line 110: &lt;<arg fmt="%s" index="1">pwm0</arg>&gt; is already declared in this region.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="32" delta="unknown" >"Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera uart_tb_v1/generador_pulso.vhd" Line 111: &lt;<arg fmt="%s" index="1">pwm3</arg>&gt; is already declared in this region.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="288" delta="unknown" >"Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera uart_tb_v1/generador_pulso.vhd" Line 496: Cannot read from &apos;out&apos; object <arg fmt="%s" index="1">pwm0</arg> ; use &apos;buffer&apos; or &apos;inout&apos;
+</msg>
+
+<msg type="error" file="HDLCompiler" num="854" delta="unknown" >"Y:/carlos ITEFI/ITEFI-PROYECTOS/HDL_SAW/MOJO/genera uart_tb_v1/generador_pulso.vhd" Line 69: Unit &lt;<arg fmt="%s" index="1">behaivioral</arg>&gt; ignored due to previous errors.
+</msg>
+
 </messages>
 
